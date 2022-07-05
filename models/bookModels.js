@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-
+// this is the book model you can changed to anything else! customer, user, etc
 const bookModels = new Schema(
   {
     title: { type: String },

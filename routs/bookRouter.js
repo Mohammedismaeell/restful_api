@@ -54,6 +54,7 @@ function routes(Book) {
         return res.json(book);
       });
     })
+    // Removing object with delete function
     .delete((req, res) => {
       req.book.remove((err) => {
         if (err) {

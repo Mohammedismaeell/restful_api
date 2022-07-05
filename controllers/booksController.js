@@ -1,4 +1,5 @@
 function booksController(Book) {
+  // creating a post function to add one object
   function post(req, res) {
     const book = new Book(req.body);
     if (!req.body.title) {
@@ -9,6 +10,7 @@ function booksController(Book) {
     res.status(201);
     return res.json(book);
   }
+  // creating a get function to return all objects
   function get(req, res) {
     const query = {};
     if (req.query.genre) {
